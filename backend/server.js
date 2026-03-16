@@ -16,7 +16,7 @@ const cors = require("cors");
 const fs = require("fs");
 //importar utilidades para trabalhar com caminhos de arquivos
 const path = require("path");
-//importar o arquivo JSON que contém as raças e fotos
+//importar o arquivo JSON que contém os nomes e fotos
 const personagens = require("./data/snoopykitty.json");
 //criar a aplicação Express
 const app = express();
@@ -66,7 +66,7 @@ function sortear(array) {
 //http://localhost:3000/api/personagens/aleatorio
 
 app.get("/api/personagens/aleatorio", (req, res) => {
-    //pegar todas as fotos de todas as raças 
+    //pegar todas as fotos de todas os nomes 
     // Object.values pega os valores do objeto
     // flat transforma tudo em um único array
     const todasAsFotos = Object.values(personagens).flat();
@@ -78,7 +78,7 @@ app.get("/api/personagens/aleatorio", (req, res) => {
         //status da resposta
         status: "success",
         //URL da imagem que foi sorteada
-        message: `http://localhost:${PORT}/fotos/${item}`
+        message: `http://10.106.208.28:${PORT}/fotos/${item}` // 10.106.208.28 é o meu IP
     });
 });
 
@@ -89,10 +89,10 @@ app.get("/api/personagens/aleatorio", (req, res) => {
 
 app.get("/api/personagens/:nome", (req, res) => {
 
-    //pega o parâmetro da URL (ex. husky)
+    //pega o parâmetro da URL (ex. snoopy)
     const nome = req.params.nome.toLowerCase();
 
-    //verifica se essa raça existe no JSON
+    //verifica se esse nome existe no JSON
     if (!personagens[nome]){
         res.status(404).json({
             //status de erro
@@ -110,7 +110,7 @@ app.get("/api/personagens/:nome", (req, res) => {
         //status de sucesso
         status: "success",
         //URL da imagem sorteada
-        message: `http://localhost:${PORT}/fotos/${item}`
+        message: `http://10.106.208.28:${PORT}/fotos/${item}`
     });
 
 });
@@ -119,7 +119,7 @@ app.get("/api/personagens/:nome", (req, res) => {
 //===================================
 //iniciar o servidor express
 app.listen(PORT, () => {
-    console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);
+    console.log(`🚀 Servidor rodando em http://10.106.208.28:${PORT}`);
     console.log(`📂 Coloque as fotos manualmente em: data/fotos/`);	
     
 })

@@ -41,7 +41,7 @@ const fofoArea = document.querySelector(".fofo-area");
 // endereço base da nossa API local
 // localhost = computador do próprio usuário
 // porta 3000 = onde o servidor Node está rodando
-const API = "http://localhost:3000/api/personagens";
+const API = "http://10.106.208.29:3000/api/personagens"; // IP da mariana, conexão frontend
 
 
 // ==============================
