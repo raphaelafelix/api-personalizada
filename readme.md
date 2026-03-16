@@ -23,13 +23,13 @@ Uma API é um protocolo de regras e conjuntos para que dois softwares interajam 
 ---
 ## Processo real
 API rodando: ⬇️
-<img src="./evidencias/api-rodando.png" alt="API rodando" width="150px">
+<img src="./evidencias/api-rodando.png" alt="API rodando" width="300px">
 Front-End funcionando: ⬇️
-<img src="./evidencias/frontend-funcionando.png" alt="Front-End funcionando" width="150px">
+<img src="./evidencias/frontend-funcionando.png" alt="Front-End funcionando" width="300px">
 IP da conexão Back-End: ⬇️
-<img src="./evidencias/ip-backend.png" alt="IP backend" width="150px">
+<img src="./evidencias/ip-backend.png" alt="IP backend" width="300px">
 Network em funcionamento: ⬇️
-<img src="./evidencias/request-network.png" alt="Request Network" width="150px">
+<img src="./evidencias/request-network.png" alt="Request Network" width="300px">
 
 Vídeo do funcionamento | [💟 Vídeo do funcionamento da API nas duas frentes](https://drive.google.com/file/d/1hicCtClyKOccTPqwaYlfHzYewYdmMhuo/view)
 
