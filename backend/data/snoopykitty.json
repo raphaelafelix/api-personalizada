@@ -1,6 +1,6 @@
 {
     "snoopy": ["snoopy/snoopy1.jpg", "snoopy/snoopy2.jpg", "snoopy/snoopy3.jpg", "snoopy/snoopy4.jpg", "snoopy/snoopy5.jpg"],
-    "hellokitty": ["hellokitty/hellokitty1.jpg", "hellokitty/hellokitty2.jpg", "hellokitty/hellokitty3.jpg", "hellokitty/hellokitty4.jpg", "hellokitty/hellokitty5.jpg"],
-    "charliebrown": ["charliebrown/charliebrown1.jpg", "charliebrown/charliebrown2.jpg", "charliebrown/charliebrown3.jpg", "charliebrown/charliebrown4.jpg", "charliebrown/charliebrown5.jpg"],
+    "hello kitty": ["hellokitty/hellokitty1.jpg", "hellokitty/hellokitty2.jpg", "hellokitty/hellokitty3.jpg", "hellokitty/hellokitty4.jpg", "hellokitty/hellokitty5.jpg"],
+    "charlie brown": ["charliebrown/charliebrown1.jpg", "charliebrown/charliebrown2.jpg", "charliebrown/charliebrown3.jpg", "charliebrown/charliebrown4.jpg", "charliebrown/charliebrown5.jpg"],
     "moranguinho": [ "moranguinho/moranguinho1.jpg", "moranguinho/moranguinho2.jpg", "moranguinho/moranguinho3.jpg", "moranguinho/moranguinho4.jpg", "moranguinho/moranguinho5.jpg"]
 }
