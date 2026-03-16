@@ -18,7 +18,7 @@ e mostra os dados na tela.
 const characterImage = document.getElementById("characterImage");
 
 // pega o elemento que mostra o nome da raça
-const breedName = document.getElementById("breedName");
+const typeName = document.getElementById("typeName");
 
 // botão que busca um cachorro aleatório
 const randomBtn = document.getElementById("randomBtn");
@@ -27,7 +27,7 @@ const randomBtn = document.getElementById("randomBtn");
 const searchBtn = document.getElementById("searchBtn");
 
 // campo de texto onde o usuário digita a raça
-const breedInput = document.getElementById("breedInput");
+const typeInput = document.getElementById("typeInput");
 
 // área onde fica a imagem do cachorro
 // usamos querySelector porque é uma classe (.fofo-area)
@@ -71,7 +71,7 @@ async function buscarPersonagens(url) {
         if (data.status === "error") {
 
             // mostra a mensagem de erro na tela
-            breedName.textContent = data.message;
+            typeName.textContent = data.message;
 
             // remove a imagem
             characterImage.src = "";
@@ -97,7 +97,7 @@ async function buscarPersonagens(url) {
 
         // coloca a primeira letra maiúscula
         // ex: husky → Husky
-        breedName.textContent =
+        typeName.textContent =
             nome.charAt(0).toUpperCase() + nome.slice(1);
 
     } catch (erro) {
@@ -109,7 +109,7 @@ async function buscarPersonagens(url) {
         console.error(erro);
 
         // mostra mensagem na tela
-        breedName.textContent =
+        typeName.textContent =
             "⚠️ Servidor offline — rode: node server.js";
 
         // remove a imagem
@@ -144,7 +144,7 @@ function personagemAleatorio() {
 function buscarPorNome() {
 
     // pega o texto digitado no input
-    const nome = breedInput.value.trim().toLowerCase();
+    const nome = typeInput.value.trim().toLowerCase();
 
     // verifica se o usuário digitou algo
     if (!nome) {
@@ -181,7 +181,7 @@ characterImage.addEventListener("click", personagemAleatorio);
 
 
 // quando o usuário apertar ENTER no input
-breedInput.addEventListener("keypress", (event) => {
+typeInput.addEventListener("keypress", (event) => {
 
     // verifica se a tecla pressionada foi Enter
     if (event.key === "Enter") {

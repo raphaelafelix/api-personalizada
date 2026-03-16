@@ -108,7 +108,7 @@ app.get("/api/personagens/:nome", (req, res) => {
     //retorna a resposta em JSON
     res.json({
         //status de sucesso
-        status: "sucess",
+        status: "success",
         //URL da imagem sorteada
         message: `http://localhost:${PORT}/fotos/${item}`
     });
