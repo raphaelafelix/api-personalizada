@@ -1,6 +1,6 @@
 # API de Personagens
 
-Front-End por **Mariana Ayoub** e Back-End **Raphaela Felix**. O projeto e a estética dele foi baseado em gostos que temos em comum e nossos personagens favoritos.
+Front-End por **Mariana Ayoub** e Back-End por **Raphaela Felix**. O projeto e a estética dele foi baseado em gostos que temos em comum e nossos personagens favoritos.
 
 Uma API é um protocolo de regras e conjuntos para que dois softwares interajam entre si. O formato do arquivo para essa comunicação costuma ser em XML ou **JSON**, no nosso caso foi **JSON**
 
