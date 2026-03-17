@@ -29,7 +29,7 @@ const searchBtn = document.getElementById("searchBtn");
 // campo de texto onde o usuário digita a raça
 const typeInput = document.getElementById("typeInput");
 
-// área onde fica a imagem do cachorro
+// área onde fica a imagem do personagem
 // usamos querySelector porque é uma classe (.fofo-area)
 const fofoArea = document.querySelector(".fofo-area");
 
@@ -41,7 +41,7 @@ const fofoArea = document.querySelector(".fofo-area");
 // endereço base da nossa API local
 // localhost = computador do próprio usuário
 // porta 3000 = onde o servidor Node está rodando
-const API = "http://10.106.208.29:3000/api/personagens"; // IP da mariana, conexão frontend
+const API = "http://10.106.208.28:3000/api/personagens"; // IP da mariana, conexão frontend
 
 
 // ==============================
